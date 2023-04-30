@@ -6,15 +6,47 @@
 -->
 <html>
   <head>
-    <title>Place Searches</title>
+    <title>Delaware Flood Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
+    <link rel="icon" href="assets/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <script type="module" src="./index.ts"></script>
   </head>
   <body>
-    <div id="map"></div>
-
+    <header>
+      <div class="header__logo">
+        <img id="siteLogo" src="assets/logo.png">
+      </div>
+      <div class="header__title">
+        <h2 id="siteTitle">
+          Delaware Flood Map
+        </h2>
+      </div>
+      <div class="header__button">
+        <button class="btn" onclick="window.open('https://github.com/Pink-Hat-Hacker')" />
+            <img
+                src="https://avatars.githubusercontent.com/u/21318992?v=4"
+            ></img>
+            Zoe Valladares
+        </button>
+      </div>
+    </header>
+    </body>
+    <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    />
+    <form id="markerForm">
+      <input type="radio" name="markerType" value="red">High River Levels<br>
+      <input type="radio" name="markerType" value="blue">Heavy Rain<br>
+      <input type="radio" name="markerType" value="green">Dam/Levee Failure<br>
+      <input type="radio" name="markerType" value="purple">Bare Ground<br>
+    </form>
+    
+    <div id="map">
+    </div>
     <!-- 
       The `defer` attribute causes the callback to execute after the full HTML
       document has been parsed. For non-blocking uses, avoiding race conditions,
@@ -23,7 +55,7 @@
       for more information.
       -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=places&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd_Ytx0nca3vYJy4Yam6iyMWAb1O7y634&callback=initMap&libraries=places&v=weekly"
       defer
     ></script>
   </body>
