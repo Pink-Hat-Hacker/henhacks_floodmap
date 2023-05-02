@@ -18,8 +18,7 @@ With these questions in mind, create a hack that can aid in flood monitoring!
 ### Implementation
 [Powerpoint Presentation](https://docs.google.com/presentation/d/1wUYV01AEIHe3ENwJqBT4NApQUrME35sf4hh0DsKtpZA/edit?usp=sharing)
 
-[![Flood Map Video](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/467/743/datas/gallery.jpg)]
-(https://youtu.be/Iv3KQ7SUHro)
+[![Flood Map Video](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/467/743/datas/gallery.jpg)](https://youtu.be/Iv3KQ7SUHro)
 
 #### Tools
 - Google Map's API
